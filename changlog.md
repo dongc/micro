@@ -1,3 +1,3 @@
-# changlog list
+# changlog
 - init sprint boot project
 
