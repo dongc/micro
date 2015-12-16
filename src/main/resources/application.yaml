@@ -1,18 +1,45 @@
 spring:
   profiles.active: dev
----
 
+
+---
+# dev branch
 spring:
   profiles: dev
+
+# project info
+endpoints:
+  info:
+    id: info
+    sensitive: false
+    enabled: true
+
+info:
+  app:
+    name: micro project
+    description: microservice Project demo
+    version: 0.0.1-SNAPSHOT
 
 server:
   port: 8080
   address: 127.0.0.1
 
----
+management:
+  port: 9000
+  address: 127.0.0.1
+  security:
+    enabled: true
 
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: admin
+---
+# product branch
 spring:
-  profiles: prd
+  profiles: prod
 
 server:
   port: 8080

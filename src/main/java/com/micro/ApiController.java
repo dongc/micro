@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApiController {
 
-
     @RequestMapping(value = "hello", method = RequestMethod.GET)
     public String index() {
         return "hello world!";
